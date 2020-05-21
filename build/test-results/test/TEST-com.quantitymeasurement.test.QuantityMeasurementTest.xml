@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.quantitymeasurement.test.QuantityMeasurementTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-05-21T18:13:19" hostname="LAPTOP-OT35PSQH" time="0.018">
+<testsuite name="com.quantitymeasurement.test.QuantityMeasurementTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2020-05-21T18:17:50" hostname="LAPTOP-OT35PSQH" time="0.021">
   <properties/>
-  <testcase name="givenTwoDifferentFeetValue_WhenNotEqual_ShouldReturnFalse" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.007"/>
-  <testcase name="givenFeetValue_WhenNull_ShouldReturnFalse" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.0"/>
+  <testcase name="givenTwoDifferentFeetValue_WhenNotEqual_ShouldReturnFalse" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.008"/>
+  <testcase name="givenFeetValue_WhenNull_ShouldReturnFalse" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.001"/>
   <testcase name="givenTwoInchValue_WhenNotEqual_ShouldReturnFalse" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenZeroFeetAndAnotherFeet_WhenNotEqual_ShouldReturnFalse" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.001"/>
+  <testcase name="givenZeroFeetAndAnotherFeet_WhenNotEqual_ShouldReturnFalse" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.0"/>
   <testcase name="givenTwoFeetValue_WhenEqual_ShouldReturnTrue" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenReferenceObjectForFeet_WhenNotEqual_ShouldReturnFalse" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.0"/>
+  <testcase name="givenTwoSameInchValue_WhenEqual_ShouldReturnTrue" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.0"/>
+  <testcase name="givenReferenceObjectForFeet_WhenNotEqual_ShouldReturnFalse" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.001"/>
   <testcase name="givenZeroFeetAndZeroFeet_WhenEqual_ShouldReturnTrue" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.0"/>
   <testcase name="givenReferenceObjectForFeet_WhenEqual_ShouldReturnTrue" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenZeroInchAndZeroInchValue_WhenEqual_ShouldReturnTrue" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.001"/>
-  <testcase name="givenTwoDifferentType_WhenNotEqual_ShouldReturnFalse" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.001"/>
+  <testcase name="givenZeroInchAndZeroInchValue_WhenEqual_ShouldReturnTrue" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.0"/>
+  <testcase name="givenTwoDifferentType_WhenNotEqual_ShouldReturnFalse" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
