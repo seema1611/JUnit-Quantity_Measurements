@@ -277,4 +277,11 @@ public class QuantityMeasurementTest {
         double c1 = quantityMeasurement.getUnitConversionOutput(100.0, Units.C);
         Assert.assertEquals( f1, c1, 0.0);
     }
+
+    @Test
+    public void given100CAnd212F_WhenEqual_ShouldReturnTrue() {
+        double c1 = quantityMeasurement.getUnitConversionOutput(100.0, Units.C);
+        double f1 = quantityMeasurement.getUnitConversionOutput(212.0, Units.F);
+        Assert.assertEquals( c1, f1, 0.0);
+    }
 }

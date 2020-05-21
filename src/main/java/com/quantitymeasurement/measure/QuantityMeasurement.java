@@ -7,6 +7,8 @@ public class QuantityMeasurement {
     public double getUnitConversionOutput(double value, Units unitType) {
         if (unitType.equals(Units.C))
             return value * unitType.unitType + 32;
+        else if (unitType.equals(Units.F))
+            return value * unitType.unitType;
         return value * unitType.unitType;
     }
 
