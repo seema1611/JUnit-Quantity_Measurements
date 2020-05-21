@@ -225,8 +225,17 @@ public class QuantityMeasurementTest {
 
     @Test
     public void givenOneLiterAndThousandMl_WhenEqual_ShouldReturnTrue() {
-        double litre1 = quantityMeasurement.getUnitConversionOutput(1, Units.LITRE);
-        double ml1 = quantityMeasurement.getUnitConversionOutput(1000, Units.ML);
+        double litre1 = quantityMeasurement.getUnitConversionOutput(1.0, Units.LITRE);
+        double ml1 = quantityMeasurement.getUnitConversionOutput(1000.0, Units.ML);
         Assert.assertEquals( litre1, ml1, 1.0);
+    }
+
+    //UC-6----Add Volumes----
+    @Test
+    public void givenOneGallonAddThreePtSevenEightLtrs_WhenEqual_ShouldReturnTrue() {
+        double output = 7560.0;
+        double gallon1 = quantityMeasurement.getUnitConversionOutput(1, Units.GALLON);
+        double litre1 = quantityMeasurement.getUnitConversionOutput(3.78, Units.LITRE);
+        Assert.assertEquals(output, gallon1 + litre1, 1.0);
     }
 }
