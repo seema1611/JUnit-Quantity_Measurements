@@ -45,4 +45,11 @@ public class QuantityMeasurementTest {
         QuantityMeasurementTest quantityMeasurementTest = new QuantityMeasurementTest();
         Assert.assertNotEquals(quantityMeasurement, quantityMeasurementTest);
     }
+
+    @Test
+    public void givenTwoFeetValue_WhenEqual_ShouldReturnTrue() {
+        double feet1 = quantityMeasurement.getUnitConversionOutput(5.0, Units.FEET);
+        double feet2 = quantityMeasurement.getUnitConversionOutput(5.0, Units.FEET);
+        Assert.assertEquals(feet1, feet2, 0.0);
+    }
 }
