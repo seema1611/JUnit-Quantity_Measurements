@@ -222,4 +222,11 @@ public class QuantityMeasurementTest {
         double litre1 = quantityMeasurement.getUnitConversionOutput(3.78, Units.LITRE);
         Assert.assertEquals( gallon1, litre1, 0.0);
     }
+
+    @Test
+    public void givenOneLiterAndThousandMl_WhenEqual_ShouldReturnTrue() {
+        double litre1 = quantityMeasurement.getUnitConversionOutput(1, Units.LITRE);
+        double ml1 = quantityMeasurement.getUnitConversionOutput(1000, Units.ML);
+        Assert.assertEquals( litre1, ml1, 1.0);
+    }
 }
