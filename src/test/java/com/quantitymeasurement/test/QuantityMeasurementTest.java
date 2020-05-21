@@ -59,4 +59,12 @@ public class QuantityMeasurementTest {
         double feet2 = quantityMeasurement.getUnitConversionOutput(5.0, Units.FEET);
         Assert.assertNotEquals(feet1, feet2, 0.0);
     }
+
+    //UC-1----INCH----
+    @Test
+    public void givenZeroInchAndZeroInchValue_WhenEqual_ShouldReturnTrue() {
+        double inch1 = quantityMeasurement.getUnitConversionOutput(0.0, Units.INCH);
+        double inch2 = quantityMeasurement.getUnitConversionOutput(0.0, Units.INCH);
+        Assert.assertEquals( inch1, inch2, 0.0);
+    }
 }
