@@ -173,4 +173,12 @@ public class QuantityMeasurementTest {
         double feet1 = quantityMeasurement.getUnitConversionOutput(3.0, Units.FEET);
         Assert.assertEquals( yard1, feet1, 0.0);
     }
+
+    //UC-3----CentiMeters----
+    @Test
+    public void givenTwoInchAndFiveCm_WhenEqual_ShouldReturnTrue() {
+        double inch1 = quantityMeasurement.getUnitConversionOutput(2.0, Units.INCH);
+        double cm1 = quantityMeasurement.getUnitConversionOutput(5.0, Units.CM);
+        Assert.assertEquals( inch1, cm1, 1.0);
+    }
 }
