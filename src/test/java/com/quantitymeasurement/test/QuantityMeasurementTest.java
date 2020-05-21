@@ -39,4 +39,10 @@ public class QuantityMeasurementTest {
         QuantityMeasurement quantityMeasurement1 = new QuantityMeasurement();
         Assert.assertEquals(quantityMeasurement, quantityMeasurement1);
     }
+
+    @Test
+    public void givenReferenceObjectForFeet_WhenNotEqual_ShouldReturnFalse() {
+        QuantityMeasurementTest quantityMeasurementTest = new QuantityMeasurementTest();
+        Assert.assertNotEquals(quantityMeasurement, quantityMeasurementTest);
+    }
 }
