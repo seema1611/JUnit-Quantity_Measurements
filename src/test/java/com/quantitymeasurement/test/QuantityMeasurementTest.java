@@ -200,7 +200,7 @@ public class QuantityMeasurementTest {
     }
 
     @Test
-    public void givenOneFeetAndOneFeet_WhenAdded_ShouldReturnCorrect() {
+    public void givenOneFeetAndOneFeet_WhenAdded_ShouldReturnCorrectAddition() {
         double output = 24.0;
         double feet1 = quantityMeasurement.getUnitConversionOutput(1.0, Units.FEET);
         double feet2 = quantityMeasurement.getUnitConversionOutput(1.0, Units.FEET);
@@ -208,7 +208,7 @@ public class QuantityMeasurementTest {
     }
 
     @Test
-    public void givenTwoInchAndTwoPtFiveCm_WhenAdded_ShouldReturnCorrect() {
+    public void givenTwoInchAndTwoPtFiveCm_WhenAdded_ShouldReturnCorrectAddition() {
         double output = 3.0;
         double inch1 = quantityMeasurement.getUnitConversionOutput(2.0, Units.INCH);
         double cm1 = quantityMeasurement.getUnitConversionOutput(2.5, Units.CM);
