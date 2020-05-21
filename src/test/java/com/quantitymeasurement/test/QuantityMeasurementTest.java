@@ -198,4 +198,12 @@ public class QuantityMeasurementTest {
         double inch1 = quantityMeasurement.getUnitConversionOutput(2.0, Units.INCH);
         Assert.assertEquals(output,feet1 + inch1, 1.0);
     }
+
+    @Test
+    public void givenOneFeetAndOneFeet_WhenAdded_ShouldReturnCorrect() {
+        double output = 24.0;
+        double feet1 = quantityMeasurement.getUnitConversionOutput(1.0, Units.FEET);
+        double feet2 = quantityMeasurement.getUnitConversionOutput(1.0, Units.FEET);
+        Assert.assertEquals(output, feet1 + feet2, 1.0);
+    }
 }
