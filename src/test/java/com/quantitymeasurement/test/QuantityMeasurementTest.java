@@ -250,15 +250,23 @@ public class QuantityMeasurementTest {
     //UC-7----Weights in gram----
     @Test
     public void givenOneKgAndThousandGrams_WhenEqual_ShouldReturnTrue() {
-        double kg1 = quantityMeasurement.getUnitConversionOutput(1, Units.KG);
-        double gram1 = quantityMeasurement.getUnitConversionOutput(1000, Units.GRAMS);
+        double kg1 = quantityMeasurement.getUnitConversionOutput(1.0, Units.KG);
+        double gram1 = quantityMeasurement.getUnitConversionOutput(1000.0, Units.GRAMS);
         Assert.assertEquals( kg1, gram1, 0.0);
     }
 
     @Test
     public void givenOneTonneAndThousandKg_WhenEqual_ShouldReturnTrue() {
-        double tonne1 = quantityMeasurement.getUnitConversionOutput(1, Units.TONNE);
-        double kg1 = quantityMeasurement.getUnitConversionOutput(1000, Units.KG);
+        double tonne1 = quantityMeasurement.getUnitConversionOutput(1.0, Units.TONNE);
+        double kg1 = quantityMeasurement.getUnitConversionOutput(1000.0, Units.KG);
         Assert.assertEquals( tonne1, kg1, 0.0);
+    }
+
+    @Test
+    public void givenOneTonneAddThousandGrams_WhenEqual_ShouldReturnTrue() {
+        double output = 1001;
+        double tonne1 = quantityMeasurement.getUnitConversionOutput(1.0, Units.TONNE);
+        double gram1 = quantityMeasurement.getUnitConversionOutput(1000.0, Units.GRAMS);
+        Assert.assertEquals(output, tonne1 + gram1, 0.0);
     }
 }
