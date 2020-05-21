@@ -33,4 +33,10 @@ public class QuantityMeasurementTest {
     public void givenFeetValue_WhenNull_ShouldReturnFalse() {
         Assert.assertFalse(quantityMeasurement.equals(null));
     }
+
+    @Test
+    public void givenReferenceObjectForFeet_WhenEqual_ShouldReturnTrue() {
+        QuantityMeasurement quantityMeasurement1 = new QuantityMeasurement();
+        Assert.assertEquals(quantityMeasurement, quantityMeasurement1);
+    }
 }
