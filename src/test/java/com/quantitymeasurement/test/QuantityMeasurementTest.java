@@ -206,4 +206,12 @@ public class QuantityMeasurementTest {
         double feet2 = quantityMeasurement.getUnitConversionOutput(1.0, Units.FEET);
         Assert.assertEquals(output, feet1 + feet2, 1.0);
     }
+
+    @Test
+    public void givenTwoInchAndTwoPtFiveCm_WhenAdded_ShouldReturnCorrect() {
+        double output = 3.0;
+        double inch1 = quantityMeasurement.getUnitConversionOutput(2.0, Units.INCH);
+        double cm1 = quantityMeasurement.getUnitConversionOutput(2.5, Units.CM);
+        Assert.assertEquals(output, inch1 + cm1, 1.0);
+    }
 }
