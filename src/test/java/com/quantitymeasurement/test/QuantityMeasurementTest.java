@@ -28,4 +28,9 @@ public class QuantityMeasurementTest {
         double feet2 = quantityMeasurement.getUnitConversionOutput(6.0, Units.FEET);
         Assert.assertNotEquals(feet1, feet2, 0.0);
     }
+
+    @Test
+    public void givenFeetValue_WhenNull_ShouldReturnFalse() {
+        Assert.assertFalse(quantityMeasurement.equals(null));
+    }
 }
