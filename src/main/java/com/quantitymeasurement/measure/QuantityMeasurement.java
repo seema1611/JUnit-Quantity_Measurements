@@ -1,7 +1,5 @@
 package com.quantitymeasurement.measure;
 
-import java.util.Objects;
-
 public class QuantityMeasurement {
     private double value;
     private Units unitType;
