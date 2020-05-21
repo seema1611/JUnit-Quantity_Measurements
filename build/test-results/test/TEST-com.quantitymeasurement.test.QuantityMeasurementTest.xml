@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.quantitymeasurement.test.QuantityMeasurementTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2020-05-21T18:24:36" hostname="LAPTOP-OT35PSQH" time="0.02">
+<testsuite name="com.quantitymeasurement.test.QuantityMeasurementTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2020-05-21T18:34:05" hostname="LAPTOP-OT35PSQH" time="0.053">
   <properties/>
-  <testcase name="givenTwoDifferentFeetValue_WhenNotEqual_ShouldReturnFalse" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.006"/>
-  <testcase name="givenZeroFeetAndZeroInch_WhenEqual_ShouldReturnTrue" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenFeetValue_WhenNull_ShouldReturnFalse" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.0"/>
+  <testcase name="givenTwoDifferentFeetValue_WhenNotEqual_ShouldReturnFalse" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.007"/>
+  <testcase name="givenOneFeetAndTwelveInch_WhenEqual_ShouldReturnTrue" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.001"/>
+  <testcase name="givenZeroFeetAndZeroInch_WhenEqual_ShouldReturnTrue" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.001"/>
+  <testcase name="givenFeetValue_WhenNull_ShouldReturnFalse" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.001"/>
+  <testcase name="givenTwelveInchAndOneFeet_WhenEqual_ShouldReturnTrue" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.0"/>
   <testcase name="givenTwoDifferentInchValue_WhenNotEqual_ShouldReturnFalse" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.001"/>
-  <testcase name="givenTwoInchValue_WhenNotEqual_ShouldReturnFalse" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.0"/>
+  <testcase name="givenTwoInchValue_WhenNotEqual_ShouldReturnFalse" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.001"/>
   <testcase name="givenZeroFeetAndAnotherFeet_WhenNotEqual_ShouldReturnFalse" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.001"/>
-  <testcase name="givenTwoFeetValue_WhenEqual_ShouldReturnTrue" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenTwoSameInchValue_WhenEqual_ShouldReturnTrue" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.0"/>
+  <testcase name="givenTwoFeetValue_WhenEqual_ShouldReturnTrue" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.001"/>
+  <testcase name="givenTwoSameInchValue_WhenEqual_ShouldReturnTrue" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.001"/>
   <testcase name="givenReferenceObjectForFeet_WhenNotEqual_ShouldReturnFalse" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.0"/>
   <testcase name="givenZeroFeetAndZeroFeet_WhenEqual_ShouldReturnTrue" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.001"/>
   <testcase name="givenReferenceObjectForFeet_WhenEqual_ShouldReturnTrue" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.001"/>
-  <testcase name="givenZeroInchAndZeroInchValue_WhenEqual_ShouldReturnTrue" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.0"/>
-  <testcase name="givenTwoDifferentType_WhenNotEqual_ShouldReturnFalse" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.0"/>
+  <testcase name="givenZeroInchAndZeroInchValue_WhenEqual_ShouldReturnTrue" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.001"/>
+  <testcase name="givenOneInchAndOneFeet_WhenNotEqual_ShouldReturnFalse" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.0"/>
+  <testcase name="givenOneFeetOneInch_WhenNotEqual_ShouldReturnFalse" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.004"/>
+  <testcase name="givenTwoDifferentType_WhenNotEqual_ShouldReturnFalse" classname="com.quantitymeasurement.test.QuantityMeasurementTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
