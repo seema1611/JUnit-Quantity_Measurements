@@ -184,10 +184,18 @@ public class QuantityMeasurementTest {
 
     //UC-4----Addition In Inches----
     @Test
-    public void givenTwoInchesAndTwoInch_WhenAdded_ShouldReturnCorrect() {
+    public void givenTwoInchesAndTwoInch_WhenAdded_ShouldReturnCorrectAddition() {
         double output = 4.0;
         double inch1 = quantityMeasurement.getUnitConversionOutput(2.0, Units.INCH);
         double inch2 = quantityMeasurement.getUnitConversionOutput(2.0, Units.INCH);
         Assert.assertEquals(output, inch1 + inch2, 1.0);
+    }
+
+    @Test
+    public void givenOneFeetAndTwoInch_WhenAdded_ShouldReturnCorrectAddition() {
+        double output = 14.0;
+        double feet1 = quantityMeasurement.getUnitConversionOutput(1.0, Units.FEET);
+        double inch1 = quantityMeasurement.getUnitConversionOutput(2.0, Units.INCH);
+        Assert.assertEquals(output,feet1 + inch1, 1.0);
     }
 }
