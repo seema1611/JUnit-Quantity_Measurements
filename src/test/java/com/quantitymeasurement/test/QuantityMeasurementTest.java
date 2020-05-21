@@ -181,4 +181,13 @@ public class QuantityMeasurementTest {
         double cm1 = quantityMeasurement.getUnitConversionOutput(5.0, Units.CM);
         Assert.assertEquals( inch1, cm1, 1.0);
     }
+
+    //UC-4----Addition In Inches----
+    @Test
+    public void givenTwoInchesAndTwoInch_WhenAdded_ShouldReturnCorrect() {
+        double output = 4.0;
+        double inch1 = quantityMeasurement.getUnitConversionOutput(2.0, Units.INCH);
+        double inch2 = quantityMeasurement.getUnitConversionOutput(2.0, Units.INCH);
+        Assert.assertEquals(output, inch1 + inch2, 1.0);
+    }
 }
