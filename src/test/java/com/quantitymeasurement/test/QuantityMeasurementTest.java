@@ -214,4 +214,12 @@ public class QuantityMeasurementTest {
         double cm1 = quantityMeasurement.getUnitConversionOutput(2.5, Units.CM);
         Assert.assertEquals(output, inch1 + cm1, 1.0);
     }
+
+    //UC-5----Volumes----
+    @Test
+    public void givenOneGallonAndThreePtSevenEightLtrs_WhenEqual_ShouldReturnTrue() {
+        double gallon1 = quantityMeasurement.getUnitConversionOutput(1.0, Units.GALLON);
+        double litre1 = quantityMeasurement.getUnitConversionOutput(3.78, Units.LITRE);
+        Assert.assertEquals( gallon1, litre1, 0.0);
+    }
 }
