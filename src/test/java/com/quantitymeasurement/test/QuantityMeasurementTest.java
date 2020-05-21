@@ -67,4 +67,11 @@ public class QuantityMeasurementTest {
         double inch2 = quantityMeasurement.getUnitConversionOutput(0.0, Units.INCH);
         Assert.assertEquals( inch1, inch2, 0.0);
     }
+
+    @Test
+    public void givenTwoInchValue_WhenNotEqual_ShouldReturnFalse() {
+        double inch1 = quantityMeasurement.getUnitConversionOutput(0.0, Units.INCH);
+        double inch2 = quantityMeasurement.getUnitConversionOutput(1.0, Units.INCH);
+        Assert.assertNotEquals( inch1, inch2, 0.0);
+    }
 }
