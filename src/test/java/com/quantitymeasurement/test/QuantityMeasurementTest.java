@@ -152,4 +152,11 @@ public class QuantityMeasurementTest {
         double yard1 = quantityMeasurement.getUnitConversionOutput(1.0, Units.YARD);
         Assert.assertNotEquals( inch1, yard1, 0.0);
     }
+
+    @Test
+    public void givenOneYardAndThirtySixInch_WhenEqual_ShouldReturnTrue() {
+        double yard1 = quantityMeasurement.getUnitConversionOutput(1.0, Units.YARD);
+        double inch1 = quantityMeasurement.getUnitConversionOutput(36.0, Units.INCH);
+        Assert.assertEquals( yard1, inch1, 0.0);
+    }
 }
