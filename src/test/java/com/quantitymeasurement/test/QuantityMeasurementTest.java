@@ -246,4 +246,12 @@ public class QuantityMeasurementTest {
         double ml1 = quantityMeasurement.getUnitConversionOutput(1000.0, Units.ML);
         Assert.assertEquals(output, litre1 + ml1, 1.0);
     }
+
+    //UC-7----Weights in gram----
+    @Test
+    public void givenOneKgAndThousandGrams_WhenEqual_ShouldReturnTrue() {
+        double kg1 = quantityMeasurement.getUnitConversionOutput(1, Units.KG);
+        double gram1 = quantityMeasurement.getUnitConversionOutput(1000, Units.GRAMS);
+        Assert.assertEquals( kg1, gram1, 0.0);
+    }
 }
