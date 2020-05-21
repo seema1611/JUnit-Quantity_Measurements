@@ -5,6 +5,8 @@ public class QuantityMeasurement {
     private Units unitType;
 
     public double getUnitConversionOutput(double value, Units unitType) {
+        if (unitType.equals(Units.C))
+            return value * unitType.unitType + 32;
         return value * unitType.unitType;
     }
 

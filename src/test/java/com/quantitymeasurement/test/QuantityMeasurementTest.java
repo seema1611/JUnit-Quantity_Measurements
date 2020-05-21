@@ -269,4 +269,12 @@ public class QuantityMeasurementTest {
         double gram1 = quantityMeasurement.getUnitConversionOutput(1000.0, Units.GRAMS);
         Assert.assertEquals(output, tonne1 + gram1, 0.0);
     }
+
+    //UC-8----Temperature----
+    @Test
+    public void given212FAnd100C_WhenEqual_ShouldReturnTrue() {
+        double f1 = quantityMeasurement.getUnitConversionOutput(212.0, Units.F);
+        double c1 = quantityMeasurement.getUnitConversionOutput(100.0, Units.C);
+        Assert.assertEquals( f1, c1, 0.0);
+    }
 }
